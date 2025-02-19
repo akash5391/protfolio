@@ -1,0 +1,90 @@
+/* Hero Section */
+.hero {
+    background: url("") no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+/* About Section */
+.lead {
+    text-align: left;
+}
+
+/* Full-Screen Video Container */
+#v1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: black; /* Fallback background */
+}
+
+/* Initially Hide the Video */
+#v1 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    pointer-events: none; /* Prevent interference */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Centered "Hire Me" Button */
+#hm {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+/* Show Video on Hover */
+#hm:hover ~ video {
+    opacity: 1;
+}
+
+/* Section Styling */
+section {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Profile Picture */
+#mypic {
+    height: 420px;
+    width: 350px;
+}
+
+/* Skill Section */
+.pic {
+    height: 100px;
+    width: 200px;
+}
+
+/* Project Card */
+#cardp {
+    height: 400px;
+    width: 500px;
+    text-align: left;
+    line-height: 30px;
+}
